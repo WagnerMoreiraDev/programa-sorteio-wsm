@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado do Sorteio</title>
+</head>
+<body>
+    <h1>Resultado do Sorteio</h1>
+    <p>As pessoas sorteadas são:</p>
+    <ul>
+        {% for pessoa in resultado %}
+            <li>{{ pessoa }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Voltar</a>
+</body>
+</html>
