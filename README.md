@@ -6,28 +6,34 @@ Este é um projeto simples em Python usando o framework Flask para realizar um s
 
 Certifique-se de ter o Python e o Flask instalados. Você pode instalar o Flask usando o seguinte comando:
 
-
 pip install flask
-Como Executar
+
+ ## Como Executar
+
+
 1.Clone ou faça o download deste repositório.
 
-git clone https://github.com/seu-usuario/sorteio-web.git
+[git clone] (https://github.com/seu-usuario/sorteio-web.git)
 1.Navegue até o diretório do projeto.
-bash
-Copy code
+
+
 cd sorteio-web
-1.Execute o aplicativo Flask.
+ - 1.Execute o aplicativo Flask.
 python app.py
 1.
-Abra o navegador e acesse `http://127.0.0.1:5000/`.
+[Abra o navegador e acesse] (http://127.0.0.1:5000/)
 2.
 Clique no botão "Realizar Sorteio" para ver o resultado do sorteio.
-Estrutura do Projeto
-•`programa_sorteio.py`: Arquivo principal que contém o código do aplicativo Flask.
-•`templates/`: Diretório que contém os modelos HTML para as páginas.
-Personalização
-•Você pode personalizar a lista de nomes editando o arquivo `nomes_pessoas.txt`.
-•Modifique o número de pessoas a serem sorteadas ou adicione recursos conforme necessário.
+
+
+ ## Estrutura do Projeto
+- `programa_sorteio.py`: Arquivo principal que contém o código do aplicativo Flask.
+- `templates/`: Diretório que contém os modelos HTML para as páginas.
+
+
+## Personalização
+ -Você pode personalizar a lista de nomes editando o arquivo `nomes_pessoas.txt`.
+ -Modifique o número de pessoas a serem sorteadas ou adicione recursos conforme necessário.
 Interface Web
 O aplicativo fornece uma interface web simples com dois endpoints:
 •`/`: Página inicial com um botão para realizar o sorteio.
