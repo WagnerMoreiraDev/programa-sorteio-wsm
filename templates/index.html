@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sorteio Web</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio de Nomes</title>
 </head>
 <body>
-    <h1>Bem-vindo ao Sorteio Web!</h1>
-    <p>Clique no botão abaixo para ver o resultado do sorteio.</p>
-    <a href="/sorteio"><button>Realizar Sorteio</button></a>
+    <h1>Sorteio de Nomes</h1>
+    
+    <!-- Exibir os nomes das pessoas -->
+    <h2>Nomes das Pessoas</h2>
+    <ul>
+        {% for nome in nomes_pessoas %}
+            <li>{{ nome }}</li>
+        {% endfor %}
+    </ul>
+    
+    <!-- Link para a página de adicionar pessoas -->
+    <a href="{{ url_for('exibir_formulario_adicionar') }}">Adicionar Pessoa</a>
+    
+    <!-- Link para a página de sorteio -->
+    <a href="{{ url_for('sorteio') }}">Realizar Sorteio</a>
 </body>
 </html>
